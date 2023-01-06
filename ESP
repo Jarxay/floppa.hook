@@ -111,6 +111,7 @@ for _,v in pairs(game:GetService("Players"):GetPlayers()) do
    if v ~= game:GetService("Players").LocalPlayer then
       CreateEsp(v)
       v.CharacterAdded:Connect(CreateEsp(v))
+      print(v.Team)
    end
 end
 
@@ -118,6 +119,7 @@ game:GetService("Players").PlayerAdded:Connect(function(v)
    if v ~= game:GetService("Players").LocalPlayer then
       CreateEsp(v)
       v.CharacterAdded:Connect(CreateEsp(v))
+      print(v.Team)
    end
 end)
 return Config
