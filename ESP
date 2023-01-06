@@ -109,19 +109,19 @@ end
 
 for _,v in pairs(game:GetService("Players"):GetPlayers()) do
    if v ~= game:GetService("Players").LocalPlayer then
-   if v.Team ~= game.Players.LocalPlayer.Team then
+   --if v.Team ~= game.Players.LocalPlayer.Team then
       CreateEsp(v)
       v.CharacterAdded:Connect(CreateEsp(v))
       end
-   end
+   --end
 end
 
 game:GetService("Players").PlayerAdded:Connect(function(v)
    if v ~= game:GetService("Players").LocalPlayer then
-   if v.Team ~= game.Players.LocalPlayer.Team then
+   --if v.Team ~= game.Players.LocalPlayer.Team then
       CreateEsp(v)
       v.CharacterAdded:Connect(CreateEsp(v))
       end
-   end
+   --end
 end)
 return Config
