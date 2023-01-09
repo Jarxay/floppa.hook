@@ -2100,7 +2100,7 @@ function library:AddTab(title, pos)
 			Position = UDim2.new(0, 4, 0, 0),
 			Size = UDim2.new(0, 70, 0, 16),
 			BackgroundTransparency = 1,
-			Text = "floppa.hook",
+			Text = "Notification",
 			Font = Enum.Font.Gotham,
 			TextColor3 = Color3.fromRGB(255, 65, 65),
 			TextSize = 16,
